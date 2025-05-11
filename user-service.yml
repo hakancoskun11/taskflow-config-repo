@@ -5,7 +5,7 @@ spring:
   application:
     name: user-service  # servis adı
   datasource:
-    url: jdbc:postgresql://postgres:5432/userdb  # 'localhost' yerine 'postgres' yazıldı
+    url: jdbc:postgresql://host.docker.internal:5432/userdb
     username: postgres
     password: password
     driver-class-name: org.postgresql.Driver
