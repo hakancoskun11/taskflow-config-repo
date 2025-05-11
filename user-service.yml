@@ -4,12 +4,12 @@ server:
 spring:
   application:
     name: user-service  # servis adı
-
   datasource:
-    url: jdbc:postgresql://localhost:5432/userdb  # PostgreSQL bağlantısı
+    url: jdbc:postgresql://postgres:5432/userdb  # 'localhost' yerine 'postgres' yazıldı
     username: postgres
     password: password
     driver-class-name: org.postgresql.Driver
+
 
   jpa:
     hibernate:
