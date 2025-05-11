@@ -1,0 +1,24 @@
+server:
+  port: 8081  # user-service'in portu
+
+spring:
+  application:
+    name: user-service  # servis adı
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userdb  # PostgreSQL bağlantısı
+    username: postgres
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
